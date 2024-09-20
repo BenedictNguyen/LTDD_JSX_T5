@@ -64,7 +64,7 @@ const Screen1 = () => {
           }}
           source={blackIcon} alt='blackicon'/>
         </TouchableOpacity>
-        <TouchableOpacity onPress={()=>navigation.navigate('Screen4')}>
+        <TouchableOpacity onPress={()=>navigation.navigate('Screen5')}>
           <Image source={recIcon} alt='recicon'/>
         </TouchableOpacity>
       </View>
@@ -88,6 +88,7 @@ const Screen1 = () => {
           backgroundColor: 'rgba(25, 82, 226, 0.58)',
           borderRadius: 12
         }}>
+          
           <Text style = {{
             fontFamily: 'Roboto',
             fontWeight: 700,
