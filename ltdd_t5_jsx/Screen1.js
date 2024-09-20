@@ -46,25 +46,27 @@ const Screen1 = () => {
             fontSize: 15
           }}>Chọn một màu bên dưới:</Text>
          </View>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={()=>navigation.navigate('Screen2')}>
             <Image style={{
             marginBottom: 1
           }}
           source={blueIcon} alt='blueicon'/>
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={()=>navigation.navigate('Screen3')}>
           <Image style={{
           marginBottom: 5
           }}
           source={redIcon} alt='redicon'/>
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={()=>navigation.navigate('Screen4')}>
           <Image style={{
           marginBottom: 5
           }}
           source={blackIcon} alt='blackicon'/>
         </TouchableOpacity>
-        <TouchableOpacity><Image source={recIcon} alt='recicon'/></TouchableOpacity>
+        <TouchableOpacity onPress={()=>navigation.navigate('Screen4')}>
+          <Image source={recIcon} alt='recicon'/>
+        </TouchableOpacity>
       </View>
       <View style = {{
         flex: 0.2,
@@ -80,7 +82,6 @@ const Screen1 = () => {
         alignItems: 'center',
       }}>
         <TouchableOpacity 
-        onPress={()=>navigation.navigate('Screen2')}
         style = {{  
           width: 326,
           height: 44,
